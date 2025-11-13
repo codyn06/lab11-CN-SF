@@ -6,7 +6,7 @@ One function per operation, in order.
 """
 # First example
 import math
-def add(a, b):
+def add(a, b): 
     return a + b
 
 def sub(a, b):
@@ -16,15 +16,17 @@ def mul(a, b):
     return a * b
 
 def div(a, b):
-    if b == 0:
+    try:
+        return b / a
+    except:
         raise ZeroDivisionError("Cannot divide by zero.")
-    return a / b
-
+    
 def log(a, b):
-    if a <= 0 or a == 1 or b <= 0:
-        raise ValueError("Invalid input for logarithm.")
-    return math.log(b, a)
-
+    try:
+        return math.log(b, a)
+    except:
+        return ValueError("Invalid logarathmic input.")
+    
 def exp(a, b):
     return a ** b
 
