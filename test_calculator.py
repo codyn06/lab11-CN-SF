@@ -1,3 +1,7 @@
+# https://github.com/codyn06/lab11-CN-SF
+# Partner 1: Cody Nguyen
+# Partner 2: Sara Fletcher
+
 import unittest
 from calculator import *
 
@@ -47,14 +51,14 @@ class TestCalculator(unittest.TestCase):
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
         # call log function inside, example:
-        with self.assertRaises(ValueError): log(0, 5)
+        with self.assertRaises(ValueError): logarithm(0, 5)
         
 
     def test_hypotenuse(self): # 3 assertions
     #     fill in code
         self.assertEqual(hypotenuse(3, 4), 5)
         self.assertEqual(hypotenuse(-3, -4), 5)
-        self.assertEqual(hypotenuse(9, -16), 25)
+        self.assertEqual(hypotenuse(6, -8), 10)
 
     def test_sqrt(self): # 3 assertions
         # Test for invalid argument, example:
