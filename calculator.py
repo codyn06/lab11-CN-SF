@@ -30,4 +30,11 @@ def log(a, b):
 def exp(a, b):
     return a ** b
 
+def square_root(a):
+    try:
+        return math.sqrt(a)
+    except:
+        return ValueError("Cannot take the square root of a negative number.")
 
+def hypotenuse(a, b):
+    return math.hypot(a, b)
