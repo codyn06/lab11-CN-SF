@@ -1,3 +1,8 @@
+# https://github.com/codyn06/lab11-CN-SF
+# Partner 1: Cody Nguyen
+# Partner 2: Sara Fletcher
+
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -9,7 +14,7 @@ import math
 def add(a, b): 
     return a + b
 
-def sub(a, b):
+def subtract(a, b):
     return a - b
 
 def mul(a, b):
@@ -21,11 +26,11 @@ def div(a, b):
     except:
         raise ZeroDivisionError("Cannot divide by zero.")
     
-def log(a, b):
+def logarithm(a, b):
     try:
         return math.log(b, a)
     except:
-        return ValueError("Invalid logarathmic input.")
+        raise ValueError("Invalid logarathmic input.")
     
 def exp(a, b):
     return a ** b
@@ -34,7 +39,7 @@ def square_root(a):
     try:
         return math.sqrt(a)
     except:
-        return ValueError("Cannot take the square root of a negative number.")
+        raise ValueError("Cannot take the square root of a negative number.")
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
